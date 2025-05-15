@@ -1,3 +1,4 @@
+import 'package:calendar_schedular/component/main_calendar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,7 +8,13 @@ class HomeScreen extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("Home Screen"),
+      body: SafeArea(
+          child: Column(
+            children: [
+              MainCalendar(),
+            ],
+          ),
+      ),
     );
   }
 }
