@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:calendar_schedular/component/main_calendar.dart';
+import 'package:calendar_schedular/component/schedule_card.dart';
 
 
 class HomeScreen extends StatefulWidget { // StatefulWidget으로 변경
@@ -28,6 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
               selectedDate: selectedDate, // 선택된 날짜 전달
               onDaySelected: onDaySelected, // 날짜가 선택됐을 때 실행할 함수
               ),
+            ScheduleCard( // 일정 샘플 더미데이터
+                startTime: 12,
+                endTime: 14,
+                content: "플러터 공부"
+            ),
             ],
           ),
       ),
