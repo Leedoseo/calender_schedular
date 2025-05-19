@@ -1,6 +1,7 @@
 import 'package:calendar_schedular/const/colors.dart';
 import 'package:flutter/material.dart';
 
+// _Time 위젯
 class _Time extends StatelessWidget {
   final int startTime; // 시작 시간
   final int endTime; // 종료 시간
@@ -34,6 +35,26 @@ class _Time extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+// _Content위젯
+class _Content extends StatelessWidget {
+  final String content; // 내용
+
+  const _Content ({
+    required this.content,
+    Key? key,
+  }) : super(key: key);
+
+  @override
+
+  Widget build(BuildContext context) {
+    return Expanded( // 최대한 넓게 늘리기
+      child: Text(
+        content,
+      ),
     );
   }
 }
