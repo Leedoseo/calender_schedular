@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:calendar_schedular/component/custom_text_field.dart';
 
 class ScheduleBottomSheet extends StatefulWidget {
   const ScheduleBottomSheet({Key? key}) : super(key: key);
@@ -17,6 +18,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
         child: Container(
           height: MediaQuery.of(context).size.height / 2,
           color: Colors.white,
+          child: CustomTextField( // 시작 시간 텍스트 필드 렌더링
+              label: "시작 시간",
+          ),
         ),
     );
   }
