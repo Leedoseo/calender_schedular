@@ -31,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 context: context,
                 isDismissible: true, // 배경 탭했을 때 BottomSheet 닫기
                 builder: (_) => ScheduleBottomSheet(),
+              isScrollControlled: true,
             );
           },
           child: Icon(
